@@ -1,0 +1,100 @@
+footer {
+    padding: 70px 90px 0 111px;
+    background-color: #1E252B;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    border-top: 0.5px solid #FFFFFF26;
+    .Logo {
+        width: calc(100% / 4 - 40px);
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 21px;
+
+        b {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFFE5;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFF8C;
+        }
+    }
+    .links {
+        width: calc(60%);
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        
+        .link {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            b {
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #FFFFFFE5;
+            }
+
+            a {
+                position: relative;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 25px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #FFFFFF8C;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1.5px;
+                    bottom: -2px;
+                    left: 0;
+                    background-color: #FFFFFFE5;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform 0.3s ease-in-out;
+                }
+                &:hover {
+                    color: #FFFFFFE5;
+                }
+
+                &:hover::after {
+                    
+                    transform: scaleX(1);
+                }
+            }
+            address {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 25px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #FFFFFF8C;
+            }
+        }
+    }
+}
