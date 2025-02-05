@@ -1,0 +1,114 @@
+.newcomer__card {
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 15px;
+    background-color: #1E252B;
+    padding: 28px 20px;
+    transition: all 0.3s ease;
+
+    &__img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+
+        img {
+            width: 64px;
+            height: 64px;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 2px;
+
+            b {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 36px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #FFFFFFC7;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 27px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #FFA5378C;
+            }
+        }
+    }
+
+    .p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #FFFFFF8C;
+    }
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+
+        &__img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            img {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }            
+        }
+        button {
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 15px;
+            background-color: transparent;
+            padding: 9px 30px;            
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFF8C;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: white;
+                background-color: #FF6E30;
+            }
+        }
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+        border: 2px solid;
+        border-image-source: linear-gradient(118.49deg, rgba(255, 255, 255, 0.08) -2.11%, rgba(255, 255, 255, 0) 28.55%, rgba(255, 255, 255, 0.05) 44.69%, rgba(255, 255, 255, 0) 96.78%);
+        background: #28303699;
+    }
+}
