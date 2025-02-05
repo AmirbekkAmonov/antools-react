@@ -22,7 +22,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className='hero__img'>
-                    <img src="./assets/images/illustration.png" alt="" />
+                    <img src="./assets/images/Illustration.png" alt="" />
                 </div>
             </div>
         </section>
