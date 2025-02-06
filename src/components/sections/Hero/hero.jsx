@@ -1,18 +1,9 @@
-import React, { useEffect} from 'react'
 import './hero.scss'
 import Input from './input/input'
-import Aos from 'aos';
-import "aos/dist/aos.css";
+
 
 
 function Hero() {
-    useEffect(() => {
-        Aos.init({ 
-            duration: 800,
-            easing: "ease-in-out", 
-            once: true, 
-        });
-    }, [])
     return (
         <section className='hero'>
             <div className='container'>

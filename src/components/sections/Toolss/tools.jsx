@@ -9,6 +9,7 @@ function Tools() {
                     <p>Tools for the best Designers and Developers
                         most popularly used in the world</p>
                 </div>
+                
                 <div className='tools__cards'>
                     <Tools_card />
                     <Tools_card />

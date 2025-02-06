@@ -6,7 +6,19 @@ import Newcomer from './components/sections/Newcomer/newcomer'
 import Carousel from './components/sections/Carousel/carousel';
 import Become from './components/sections/Become/become'
 import Footer from './components/Footer/footer'
+
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 function App() {
+    useEffect(() => {
+        Aos.init({  
+            duration: 800,
+            easing: "ease-in-out", 
+            once: true, 
+        });
+    })
+    
     return (
        <main>
            <Header />
