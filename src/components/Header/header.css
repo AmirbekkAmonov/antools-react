@@ -29,6 +29,11 @@ img {
     align-items: center;
     gap: 30px;
 }
+@media (max-width: 1000px) {
+    .links {
+        display: none;
+    }    
+}
 
 .links a {
     font-size: 16px;
@@ -44,7 +49,6 @@ img {
 .links a:hover {
     color: #FFFFFFE5;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -100,11 +104,15 @@ img {
 .dropdown-content a:hover {
     background-color: rgba(35, 41, 46, 0.815);
 }
-
 .register {
     display: flex;
     align-items: center;
     gap: 40px;
+}
+@media (max-width: 1000px) {
+    .register {
+        display: none;
+    }
 }
 
 .login {
@@ -155,4 +163,111 @@ img {
 
 .signup:hover {
     background-color: #fc5d19;
+}
+
+.menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #2c343c;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    border: 1px solid #FFFFFF1A;
+}
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 40px;
+    }
+    .menu {
+        display: flex;
+    }
+}
+.menu:hover {
+    background-color: #FFFFFF1A;
+}
+.mobile_links {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #2c343c;
+    z-index: 9999;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+    padding: 50px 0;
+    box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.249);
+}
+@media (min-width: 1000px) {
+    .mobile_links { 
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    header {
+        padding: 20px;
+    }
+    .mobile_links {
+        width: 45%;
+    }
+}
+@media (max-width: 520px) {
+    .mobile_links {
+        width: 100%;
+    }
+}
+.mobile_links.show {    
+    transform: translateX(0);
+}
+
+.mobile_links .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.mobile_links .register {
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffffc7;
+    transition: all 0.3s ease;
+    background-color: #FF6E30 ;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.mobile_links .register:hover {
+    background-color: #fc5d19;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
 }
