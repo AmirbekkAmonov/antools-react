@@ -1,5 +1,4 @@
 .newcomer__card {
-    width: calc(50% - 20px);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -9,6 +8,14 @@
     background-color: #1E252B;
     padding: 28px 20px;
     transition: all 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    @media (max-width: 715px) {
+        max-width: 80%;
+    }
+    @media (max-width: 500px) {
+        max-width: 100%;
+    }
 
     &__img {
         width: 100%;
@@ -104,11 +111,9 @@
             }
         }
     }
-
     &:hover {
-        transform: translateY(-10px);
-        border: 2px solid;
-        border-image-source: linear-gradient(118.49deg, rgba(255, 255, 255, 0.08) -2.11%, rgba(255, 255, 255, 0) 28.55%, rgba(255, 255, 255, 0.05) 44.69%, rgba(255, 255, 255, 0) 96.78%);
-        background: #28303699;
+        transform: translateY(-10px) !important;
+        background: linear-gradient(45deg, #28303699 70%, #ff6a0040 100%);   
+        backdrop-filter: blur(50px)
     }
 }

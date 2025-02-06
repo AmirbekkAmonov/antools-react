@@ -121,7 +121,7 @@
     }
 
     &:hover  {
-        transform: translateY(-10px);
+        transform: translateY(-10px) !important;
         background: linear-gradient(45deg, #28303699 70%, #ff6a0040 100%);   
         backdrop-filter: blur(50px)
     }

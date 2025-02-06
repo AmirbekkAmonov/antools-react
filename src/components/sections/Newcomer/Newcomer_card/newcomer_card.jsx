@@ -1,13 +1,13 @@
 import './newcomer_card.scss'
 
-function Newcomer_card(props) {
+function Newcomer_card({image, title, description, aosDelay }) {
     return (
-        <div className="newcomer__card">
+        <div className="newcomer__card" data-aos="fade-up" data-aos-delay={aosDelay}>
            <div className='newcomer__card__img'>
-                <img src="./assets/images/zeplin.png" alt="" />
+                <img src={image } alt={title} />
                 <div className='newcomer__card__img__text'>
-                    <b>Zeplin</b>
-                    <p>Free & Paid</p>
+                    <b>{title}</b>
+                    <p>{description}</p>
                 </div>
            </div>
            <p className='p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
