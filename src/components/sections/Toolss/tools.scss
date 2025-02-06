@@ -1,6 +1,12 @@
 .tools {
     width: 100%;
     padding: 150px 90px 150px 111px;
+    @media (max-width: 1024px) {
+        padding:150px 50px;
+    }
+    @media (max-width: 840px) {
+        padding: 150px 20px;
+    }
 
     .container {
         display: flex;
@@ -25,6 +31,10 @@
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
             color: #FFFFFFE5;
+            @media (max-width: 500px) {
+                font-size: 40px;
+                line-height: 40px;
+            }
         }
 
         p {
@@ -36,16 +46,18 @@
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
             color: #FFFFFF8C;
+            @media (max-width: 710px) {
+                width: 80%;
+            }
         }
     }
 
     &__cards {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1.2fr));
         gap: 30px;
+        justify-items: center;
         margin-bottom: 50px;
     }
 

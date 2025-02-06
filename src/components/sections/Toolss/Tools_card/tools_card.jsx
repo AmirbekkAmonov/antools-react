@@ -1,13 +1,14 @@
 import './tools_card.scss'
 
-function Tools_card() {
+function Tools_card({image, title, description,aosDelay }) {
+   
     return (
-        <div className='tools__card'>
+        <div className='tools__card' data-aos="fade-up" data-aos-delay={aosDelay}>
             <div className='tools__card__img'>
-                <img src="./assets/images/figma.svg" alt="" />
+                <img src={image} alt={title} />
                 <div className='tools__card__img__text'>
-                    <b>FIGMA</b>
-                    <p>Free</p>
+                    <b>{title}</b>
+                    <p>{description}</p>
                 </div>
             </div>
             <div className='tools__card__content'>
