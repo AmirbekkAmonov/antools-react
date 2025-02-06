@@ -8,6 +8,12 @@
         justify-content: center;
         padding: 0 108px;
         gap: 90px;
+        @media (max-width: 1150px) {
+            padding: 0 50px;
+        }
+        @media (max-width: 1054px) {
+            padding: 0 20px;
+        }
     }
     &__content {
         padding: 55px 82px;
@@ -22,6 +28,10 @@
         border: 2px solid;
         backdrop-filter: blur(50px);
         border-image-source: linear-gradient(92.39deg, rgba(255, 255, 255, 0.05) -4.6%, rgba(255, 255, 255, 0) 96.79%);
+
+        @media (max-width: 600px) {
+            padding: 50px 20px;
+        }
         b {
             font-size: 24px;
             font-weight: 500;
@@ -33,6 +43,7 @@
         }
         .brand__img {
             width: 100%;
+            flex-wrap: wrap;
             display: flex;
             align-items: center;
             justify-content: space-between;
